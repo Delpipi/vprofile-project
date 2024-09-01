@@ -36,7 +36,7 @@ services:
     image: alexandrepaulkouame/vprofileapp
     container_name: vproapp
     ports:
-      - "8888:8080"
+      - "8080:8080"
     volumes:
       - vproappdata:/usr/local/tomcat
 
@@ -46,7 +46,7 @@ services:
     image: alexandrepaulkouame/vprofileweb
     container_name: vproweb
     ports:
-      - "9080:80"
+      - "80:80"
 
 volumes:
   vprodbdata: {}
